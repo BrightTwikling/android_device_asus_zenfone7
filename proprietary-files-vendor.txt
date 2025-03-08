@@ -118,7 +118,7 @@ vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.sla.service@1.0-service
 vendor/bin/hw/vendor.qti.spu@1.0-service
 vendor/bin/ims_rtp_daemon
-vendor/bin/imsdatadaemon;DISABLE_CHECKELF
+vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
 vendor/bin/init.asus.gamemode.sh
@@ -149,8 +149,7 @@ vendor/bin/lightsensor_selection
 vendor/bin/lightsensor_status
 vendor/bin/loadalgo
 vendor/bin/loc_launcher
-# Depends on GNU makefile targets libwpa_client
-vendor/bin/lowi-server;DISABLE_CHECKELF
+vendor/bin/lowi-server
 vendor/bin/mdm_helper
 vendor/bin/mdm_helper_proxy
 vendor/bin/mlid
@@ -158,7 +157,7 @@ vendor/bin/mm-vidc-omx-test
 vendor/bin/mmid
 vendor/bin/mount_apd.sh
 vendor/bin/msm_irqbalance
-vendor/bin/mutualex;DISABLE_CHECKELF
+vendor/bin/mutualex
 vendor/bin/myftm
 vendor/bin/netmgrd
 vendor/bin/nn_device_test
@@ -1269,7 +1268,7 @@ vendor/lib/libcdsprpc.so
 vendor/lib/libchiarcutils.so
 vendor/lib/libchilog.so
 vendor/lib/libcirrusspkrprot.so
-vendor/lib/libcne.so;DISABLE_CHECKELF
+vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneoplookup.so
 vendor/lib/libcneqmiutils.so
@@ -1478,7 +1477,7 @@ vendor/lib/libvpplibrary.so
 vendor/lib/libvpptestutils.so
 vendor/lib/libwebrtc_audio_preprocessing.so
 vendor/lib/libwms.so
-vendor/lib/libwqe.so;DISABLE_CHECKELF
+vendor/lib/libwqe.so
 vendor/lib/libxml.so
 vendor/lib/libxtadapter.so
 vendor/lib/mediacas/libclearkeycasplugin.so
@@ -1895,7 +1894,7 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libchiarcutils.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcirrusspkrprot.so
-vendor/lib64/libcne.so;DISABLE_CHECKELF
+vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
@@ -2119,7 +2118,7 @@ vendor/lib64/libvpplibrary.so
 vendor/lib64/libvpptestutils.so
 vendor/lib64/libwebrtc_audio_preprocessing.so
 vendor/lib64/libwms.so
-vendor/lib64/libwqe.so;DISABLE_CHECKELF
+vendor/lib64/libwqe.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/libxditk_DIT_MSMv1.so;MODULE_SUFFIX=_vendor;DISABLE_CHECKELF
 vendor/lib64/libxditk_DIT_Manager.so;MODULE_SUFFIX=_vendor;DISABLE_CHECKELF
