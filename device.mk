@@ -179,6 +179,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DeviceParts
 
+# Crypto
+PRODUCT_PACKAGES += \
+    libcrypto-v33
+
 # Device Assertion
 TARGET_OTA_ASSERT_DEVICE := I002D, WW_I002D, ASUS_I002D
 
