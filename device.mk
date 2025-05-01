@@ -435,6 +435,10 @@ PRODUCT_HOST_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.qti
+
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
