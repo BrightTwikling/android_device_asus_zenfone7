@@ -324,7 +324,16 @@ $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    android.hidl.allocator@1.0 \
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0-default \
+    android.hidl.base@1.0-dsp \
+    android.hidl.base@1.0-gpu \
+    android.hidl.base@1.0-hta \
+    android.hidl.base@1.0.ims.connectionmanagerservice \
+    android.hidl.base@1.0.qualcomm.qti.uceservice \
+    android.hidl.base@1.0_vendor
 
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_sm8250)
