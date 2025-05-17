@@ -368,6 +368,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     $(LOCAL_PATH)/media/media_codecs_performance_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kona.xml
 
+# Monitoring, Scheduler, and Statistics
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0 \
+    android.frameworks.schedulerservice@1.0 \
+    android.frameworks.sensorservice@1.0 \
+    android.frameworks.stats@1.0
+
 # Mount Point symlinks
 PRODUCT_PACKAGES += \
     mnt_point_asusfw_symlink \
