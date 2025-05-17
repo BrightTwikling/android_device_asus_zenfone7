@@ -303,6 +303,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@3.0_vendor \
     vendor.qti.gnss@4.0_vendor
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@3.0 \
+    android.hardware.graphics.composer@2.1 \
+    android.hardware.graphics.composer@2.2 \
+    android.hardware.graphics.composer@2.3 \
+    android.hardware.graphics.composer@2.4
+ 
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
