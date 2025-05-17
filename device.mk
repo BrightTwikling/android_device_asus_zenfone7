@@ -246,7 +246,17 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxVdec \
-    libOmxVenc
+    libOmxVenc \
+    android.frameworks.displayservice@1.0 \
+    vendor.display.color@1.0 \
+    vendor.display.color@1.1 \
+    vendor.display.color@1.2 \
+    vendor.display.color@1.3 \
+    vendor.display.color@1.4 \
+    vendor.display.color@1.5 \
+    vendor.display.config@2.0 \
+    vendor.display.postproc@1.0 \
+    vendor.qti.hardware.display.composer@3.0 \
 
 -include hardware/qcom-caf/sm8250/display/config/display-board.mk
 
