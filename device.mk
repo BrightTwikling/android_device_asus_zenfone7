@@ -130,6 +130,10 @@ PRODUCT_PACKAGES += \
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 
+# AI Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0-default
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
