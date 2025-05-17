@@ -26,6 +26,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    dalvik.vm.dex2oat-Xmx=1024m \
+    dalvik.vm.image-dex2oat-Xmx=256m
+
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
