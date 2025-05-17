@@ -288,6 +288,21 @@ PRODUCT_PACKAGES += \
     qcom.fmradio
 endif
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0 \
+    android.hardware.gnss@1.0_vendor \
+    android.hardware.gnss@1.1 \
+    android.hardware.gnss@2.0 \
+    android.hardware.gnss@2.1 \
+    vendor.qti.gnss@1.0_vendor \
+    vendor.qti.gnss@1.1_vendor \
+    vendor.qti.gnss@1.2_vendor \
+    vendor.qti.gnss@2.0_vendor \
+    vendor.qti.gnss@2.1_vendor \
+    vendor.qti.gnss@3.0_vendor \
+    vendor.qti.gnss@4.0_vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
