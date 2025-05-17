@@ -563,6 +563,74 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
+# Vendor service
+PRODUCT_PACKAGES += \
+    com.qualcomm.qti.dpm.api@1.0 \
+    com.qualcomm.qti.imscmservice@2.0.ims.connectionmanagerservice \
+    com.qualcomm.qti.imscmservice@2.1.ims.connectionmanagerservice \
+    com.qualcomm.qti.imscmservice@2.2.ims.connectionmanagerservice \
+    com.qualcomm.qti.uceservice@2.0.qualcomm.qti.uceservice \
+    com.qualcomm.qti.uceservice@2.1.qualcomm.qti.uceservice \
+    com.qualcomm.qti.uceservice@2.2.qualcomm.qti.uceservice \
+    vendor.qti.data.factory@2.0 \
+    vendor.qti.data.factory@2.1 \
+    vendor.qti.esepowermanager@1.0 \
+    vendor.qti.esepowermanager@1.1 \
+    vendor.qti.gnss@1.0_vendor \
+    vendor.qti.gnss@1.1_vendor \
+    vendor.qti.gnss@1.2_vendor \
+    vendor.qti.gnss@2.0_vendor \
+    vendor.qti.gnss@2.1_vendor \
+    vendor.qti.gnss@3.0_vendor \
+    vendor.qti.gnss@4.0_vendor \
+    vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.audiohalext@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.cacert@1.0 \
+    vendor.qti.hardware.camera.postproc@1.0 \
+    vendor.qti.hardware.capabilityconfigstore@1.0 \
+    vendor.qti.hardware.data.connection@1.0 \
+    vendor.qti.hardware.data.connection@1.1 \
+    vendor.qti.hardware.data.iwlan@1.0 \
+    vendor.qti.hardware.display.composer@3.0 \
+    vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.qccvndhal@1.0 \
+    vendor.qti.hardware.qseecom@1.0 \
+    vendor.qti.hardware.qteeconnector@1.0 \
+    vendor.qti.hardware.radio.am@1.0 \
+    vendor.qti.hardware.radio.ims@1.0 \
+    vendor.qti.hardware.radio.ims@1.1 \
+    vendor.qti.hardware.radio.ims@1.2 \
+    vendor.qti.hardware.radio.ims@1.3 \
+    vendor.qti.hardware.radio.ims@1.4 \
+    vendor.qti.hardware.radio.ims@1.5 \
+    vendor.qti.hardware.radio.ims@1.6 \
+    vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
+    vendor.qti.hardware.radio.lpa@1.0 \
+    vendor.qti.hardware.radio.qcrilhook@1.0 \
+    vendor.qti.hardware.radio.qtiradio@1.0 \
+    vendor.qti.hardware.radio.qtiradio@2.0 \
+    vendor.qti.hardware.radio.qtiradio@2.1 \
+    vendor.qti.hardware.radio.qtiradio@2.2 \
+    vendor.qti.hardware.radio.qtiradio@2.3 \
+    vendor.qti.hardware.radio.qtiradio@2.4 \
+    vendor.qti.hardware.radio.uim@1.0 \
+    vendor.qti.hardware.radio.uim@1.1 \
+    vendor.qti.hardware.radio.uim@1.2 \
+    vendor.qti.hardware.radio.uim_remote_client@1.0 \
+    vendor.qti.hardware.radio.uim_remote_server@1.0 \
+    vendor.qti.hardware.sensorscalibrate@1.0 \
+    vendor.qti.hardware.slmadapter@1.0 \
+    vendor.qti.hardware.soter@1.0 \
+    vendor.qti.hardware.trustedui@1.0 \
+    vendor.qti.hardware.tui_comm@1.0 \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
+    vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.ims.callinfo@1.0 \
+    vendor.qti.ims.factory@1.0 \
+    vendor.qti.imsrtpservice@3.0
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
