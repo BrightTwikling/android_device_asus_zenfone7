@@ -395,7 +395,10 @@ PRODUCT_PACKAGES += \
     $(RELEASE_PACKAGE_NFC_STACK) \
     Tag \
     SecureElement \
-    com.android.nfc_extras
+    com.android.nfc_extras \
+    android.hardware.nfc@1.0 \
+    android.hardware.nfc@1.1 \
+    android.hardware.nfc@1.2
 
 # Power
 PRODUCT_PACKAGES += \
