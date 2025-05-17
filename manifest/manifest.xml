@@ -689,4 +689,13 @@
         </interface>
         <fqname>@1.0::ISlaService/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.thermal</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IThermal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
