@@ -468,6 +468,14 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk
 
+# Security
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0 \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.biometrics.fingerprint@2.1 \
+    vendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    android.hardware.keymaster@4.0
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
