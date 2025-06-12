@@ -242,7 +242,8 @@ endif
 ifneq ($(wildcard vendor/omni/sepolicy/libperfmgr/sepolicy.mk),)
 include  vendor/omni/sepolicy/libperfmgr/sepolicy.mk
 else
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+libperfmgr_sepolicy := $(wildcard device/*/sepolicy/libperfmgr/sepolicy.mk)
+include $(libperfmgr_sepolicy)
 endif
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
