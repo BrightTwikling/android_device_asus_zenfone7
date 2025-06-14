@@ -29,10 +29,6 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    dalvik.vm.dex2oat-Xmx=1024m \
-    dalvik.vm.image-dex2oat-Xmx=256m
-
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -223,6 +219,21 @@ PRODUCT_PACKAGES += \
 
 # Device Assertion
 TARGET_OTA_ASSERT_DEVICE := I002D, WW_I002D, ASUS_I002D
+
+# DexAdd
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    dalvik.vm.dex2oat-Xmx=1024m \
+    dalvik.vm.image-dex2oat-Xmx=256m \
+    pm.dexopt.boot=verify \
+    pm.dexopt.first-boot=verify \
+    pm.dexopt.install=speed-profile \
+    dalvik.vm.image-dex2oat-filter=speed \
+    dalvik.vm.image-dex2oat-threads=8 \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.dex2oat-threads=8 \
+    dalvik.vm.dex2oat64.enabled=true
 
 # Display
 PRODUCT_PACKAGES += \
