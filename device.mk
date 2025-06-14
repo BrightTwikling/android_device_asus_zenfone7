@@ -140,8 +140,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio.effect@6.0 \
     android.hardware.audio@6.0 \
-    android.hardware.soundtrigger@2.3-impl \
-    sound_trigger.primary.kona
+    android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects_ZS670KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
