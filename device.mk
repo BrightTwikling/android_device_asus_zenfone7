@@ -314,6 +314,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3 \
     android.hardware.graphics.composer@2.4
  
+# Freeform MultiwindowAdd commentMore actions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
