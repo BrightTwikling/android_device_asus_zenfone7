@@ -144,9 +144,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio.effect@6.0 \
     android.hardware.audio@6.0 \
-    android.hardware.soundtrigger@2.0 \
-    android.hardware.soundtrigger@2.1 \
-    android.hardware.soundtrigger@2.2
+    android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects_ZS670KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -500,10 +498,6 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libgui_shim
-
-# Soundtrigger
-PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.2-impl
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
