@@ -217,6 +217,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcrypto-v33
 
+# Data
+PRODUCT_PACKAGES += \
+    IPACM_cfg.xml \
+    ipacm \
+    librmnetctl \
+    libnetfilter_conntrack \
+    libnfnetlink
+
 # Device Assertion
 TARGET_OTA_ASSERT_DEVICE := I002D, WW_I002D, ASUS_I002D
 
