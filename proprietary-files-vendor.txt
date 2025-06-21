@@ -1228,7 +1228,6 @@ vendor/lib/libTrustedInputTZ.so
 vendor/lib/libTrustedUI.so
 vendor/lib/libTrustedUITZ.so
 vendor/lib/libVkLayer_q3dtools.so
-vendor/lib/liba2dpoffload.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -1246,7 +1245,6 @@ vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libbase64.so
 vendor/lib/libbatching.so
-vendor/lib/libbatterylistener.so
 vendor/lib/libbitmlengine.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbt-hidlclient.so
@@ -1261,12 +1259,10 @@ vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libchiarcutils.so
 vendor/lib/libchilog.so
-vendor/lib/libcirrusspkrprot.so
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneoplookup.so
 vendor/lib/libcneqmiutils.so
-vendor/lib/libcomprcapture.so
 vendor/lib/libconfigdb.so
 vendor/lib/libcpion.so
 vendor/lib/libcppf.so
@@ -1288,7 +1284,6 @@ vendor/lib/libdrmtime.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
-vendor/lib/libexthwplugin.so
 vendor/lib/libfastcrc.so
 vendor/lib/libfastcvdsp_stub.so
 vendor/lib/libfastcvopt.so
@@ -1307,12 +1302,10 @@ vendor/lib/libgsl.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
 vendor/lib/libhdcpsrm.so
-vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libhdrdynamic.so
 vendor/lib/libhdrdynamicootf.so
-vendor/lib/libhfp.so
 vendor/lib/libhta_hexagon_runtime.so
 vendor/lib/libidl.so
 vendor/lib/libipebpsstriping.so
@@ -1428,7 +1421,6 @@ vendor/lib/libskewknob.so
 vendor/lib/libslimclient.so
 vendor/lib/libsmemlog.so
 vendor/lib/libsmwrapper.so
-vendor/lib/libsndmonitor.so
 vendor/lib/libsns_device_mode_stub.so
 vendor/lib/libsns_fastRPC_util.so
 vendor/lib/libsns_low_lat_stream_stub.so
@@ -1437,7 +1429,6 @@ vendor/lib/libsnsapi.so
 vendor/lib/libsnsdiaglog.so
 vendor/lib/libsoc_helper.so
 vendor/lib/libsoc_helper_jni.so
-vendor/lib/libspkrprot.so
 vendor/lib/libspl.so
 vendor/lib/libssc.so
 vendor/lib/libssc_default_listener.so
@@ -1821,7 +1812,6 @@ vendor/lib64/libTrustedInputTZ.so
 vendor/lib64/libTrustedUI.so
 vendor/lib64/libTrustedUITZ.so
 vendor/lib64/libVkLayer_q3dtools.so
-vendor/lib64/liba2dpoffload.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -1853,7 +1843,6 @@ vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libbase64.so
 vendor/lib64/libbatching.so
-vendor/lib64/libbatterylistener.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbt-hidlclient.so
@@ -1882,13 +1871,11 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libchiarcutils.so
 vendor/lib64/libchilog.so
-vendor/lib64/libcirrusspkrprot.so
 vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libcomprcapture.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libcpion.so
 vendor/lib64/libcvp2.so
@@ -1908,7 +1895,6 @@ vendor/lib64/libdrmtime.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libembmsservice.so
-vendor/lib64/libexthwplugin.so
 vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libgarden.so
@@ -1930,13 +1916,11 @@ vendor/lib64/libgsl.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
-vendor/lib64/libhdmiedid.so
 vendor/lib64/libhdmipassthru.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libhexagon_nn_stub.so
-vendor/lib64/libhfp.so
 vendor/lib64/libhta_hexagon_runtime.so
 vendor/lib64/libhwminijail.so
 vendor/lib64/libidl.so
@@ -2062,7 +2046,6 @@ vendor/lib64/libsi.so
 vendor/lib64/libskewknob.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libsmemlog.so
-vendor/lib64/libsndmonitor.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
@@ -2072,7 +2055,6 @@ vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
 vendor/lib64/libspcom.so
-vendor/lib64/libspkrprot.so
 vendor/lib64/libspl.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
