@@ -19,7 +19,6 @@ For the remove-project name block, you will need to customize it for different t
   <project path="device/asus/zenfone7"                           name="android_device_asus_zenfone7"                             remote="BrightTwikling"  revision="lineage-22.1"      />
   <project path="kernel/asus/sm8250"                             name="omnirom_kernel_asus_sm8250"                               remote="BrightTwikling"  revision="android-15"        />
   <project path="hardware/qcom-caf/sm8250/display"               name="omnirom_hardware_qcom_display"                            remote="BrightTwikling"  revision="android-15-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/audio"                 name="android_hardware_qcom_audio"                              remote="BrightTwikling"  revision="lineage-22.2-caf-sm8250" />
 
   <!-- clang -->
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
@@ -34,6 +33,5 @@ For the remove-project name block, you will need to customize it for different t
 
   <!-- packages/apps/Matlog -->
   <project path="packages/apps/Matlog"                           name="android_packages_apps_Matlog"                             remote="crdroidandroid2" revision="15.0"              />  
-
 </manifest>
 ```
