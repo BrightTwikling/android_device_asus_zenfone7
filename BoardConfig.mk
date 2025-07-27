@@ -122,7 +122,10 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_LLVM_BINUTILS := false
-TARGET_KERNEL_CLANG_VERSION := r416183b1
+#If kernel version is 4.19.190 or lower, clang version must use r416183b1.
+#TARGET_KERNEL_CLANG_VERSION := r416183b1
+#If kernel version is between 4.19.191 and 4.19.195, clang version must use r433403.
+TARGET_KERNEL_CLANG_VERSION := r433403
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 TARGET_KERNEL_SOURCE := kernel/asus/sm8250
 TARGET_KERNEL_CONFIG := vendor/zf7_defconfig
