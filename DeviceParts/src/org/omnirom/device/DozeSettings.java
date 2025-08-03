@@ -37,7 +37,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.util.Log;
 
-import org.omnirom.omnilib.utils.OmniSettings;
+import org.omnirom.device.OmniSettings;
 
 public class DozeSettings extends PreferenceFragmentCompat {
 

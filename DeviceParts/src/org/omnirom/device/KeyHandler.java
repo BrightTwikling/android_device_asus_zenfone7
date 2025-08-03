@@ -66,11 +66,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import org.omnirom.omnilib.utils.DeviceKeyHandler;
-import org.omnirom.omnilib.utils.OmniSettings;
-import org.omnirom.omnilib.utils.OmniUtils;
-import org.omnirom.omnilib.utils.OmniVibe;
-import org.omnirom.omnilib.utils.PackageUtils;
+import org.omnirom.device.DeviceKeyHandler;
+import org.omnirom.device.OmniSettings;
+import org.omnirom.device.OmniUtils;
+import org.omnirom.device.OmniVibe;
+import org.omnirom.device.PackageUtils;
 
 public class KeyHandler implements DeviceKeyHandler {
 
@@ -467,19 +467,7 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     private boolean launchSpecialActions(String value) {
-        if (value.equals(AppSelectListPreference.TORCH_ENTRY)) {
-            mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
-            IStatusBarService service = getStatusBarService();
-            if (service != null) {
-                try {
-                    service.toggleCameraFlash();
-                    OmniVibe.performHapticFeedbackLw(HapticFeedbackConstants.LONG_PRESS, false, mContext);
-                } catch (RemoteException e) {
-                    // do nothing.
-                }
-            }
-            return true;
-        } else if (value.equals(AppSelectListPreference.MUSIC_PLAY_ENTRY)) {
+        if (value.equals(AppSelectListPreference.MUSIC_PLAY_ENTRY)) {
             mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
             OmniVibe.performHapticFeedbackLw(HapticFeedbackConstants.LONG_PRESS, false, mContext);
             dispatchMediaKeyWithWakeLockToAudioService(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE);

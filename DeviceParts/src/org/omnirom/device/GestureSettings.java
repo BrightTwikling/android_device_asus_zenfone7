@@ -46,7 +46,7 @@ import android.util.Log;
 import static android.provider.Settings.Secure.SYSTEM_NAVIGATION_KEYS_ENABLED;
 import android.os.UserHandle;
 
-import org.omnirom.omnilib.utils.OmniSettings;
+import org.omnirom.device.OmniSettings;
 
 import java.util.Collections;
 import java.util.LinkedList;
