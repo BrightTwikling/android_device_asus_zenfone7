@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Defines the actions shown in advanced reboot submenu -->
+    <string-array name="config_restartActionsList">
+        <item>restart</item>
+        <item>restart_recovery</item>
+        <item>restart_bootloader</item>
+     </string-array>
+
+    <!-- Default charging limit. -->
+    <integer name="config_defaultChargingControlLimit">80</integer>
+
+    <!-- Considering the fact that the system might have an incorrect estimation of the time to
+         full. Set a time margin to make the device fully charged before the target time arrives.
+         The unit is minutes and the default value is 30 minutes. If you find that it is not enough
+         to make the device to be fully charged at the target time, increase the value
+    -->
+    <integer name="config_chargingControlTimeMargin">60</integer>
+
+</resources>
