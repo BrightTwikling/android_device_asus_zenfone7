@@ -1,14 +1,15 @@
 cc_library_static {
     name: "libinit_sm8250",
-
-    include_dirs: [
-        "system/core/init",
-    ],
-    static_libs: ["libbase"],
-    cflags: [
-        "-Wall",
-    ],
-    srcs: ["init_sm8250.cpp"],
+    srcs: ["libinit_utils.cpp"],
+    whole_static_libs: ["libbase"],
+    export_include_dirs: ["include"],
     recovery_available: true,
-    ramdisk_available: true,
+}
+
+cc_library_static {
+    name: "init_sm8250",
+    srcs: ["init_sm8250.cpp"],
+    whole_static_libs: ["libinit_sm8250"],
+    include_dirs: ["system/core/init"],
+    recovery_available: true,
 }
