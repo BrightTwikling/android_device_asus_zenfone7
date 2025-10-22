@@ -413,7 +413,8 @@ PRODUCT_PACKAGES += \
     mnt_point_factory_symlink \
     vendor_bt_firmware_mountpoint \
     vendor_dsp_mountpoint \
-    vendor_firmware_mnt_mountpoint
+    vendor_firmware_mnt_mountpoint \
+    COUNTRY_symlink
 
 # Netutils
 PRODUCT_PACKAGES += \

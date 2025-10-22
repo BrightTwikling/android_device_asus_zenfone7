@@ -43,3 +43,10 @@ install_symlink {
     installed_location: "factory",
     symlink_target: "/mnt/vendor/persist",
 }
+
+install_symlink {
+    name: "COUNTRY_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/COUNTRY",
+    symlink_target: "/mnt/vendor/factory/COUNTRY",
+}
