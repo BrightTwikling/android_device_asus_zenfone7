@@ -122,7 +122,6 @@ vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
 vendor/bin/init.asus.gamemode.sh
-vendor/bin/init.crda.sh
 vendor/bin/init.mdm.sh
 vendor/bin/init.qcom.class_core.sh
 vendor/bin/init.qcom.coex.sh
