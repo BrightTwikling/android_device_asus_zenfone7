@@ -365,9 +365,6 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.qualcomm.qti.uceservice \
     android.hidl.base@1.0_vendor
 
-# Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_sm8250)
-
 # Input
 PRODUCT_PACKAGES += \
     fts_ts.idc
