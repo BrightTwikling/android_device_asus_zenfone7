@@ -151,13 +151,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     CameraTile
 
-# Camera
-PRODUCT_PACKAGES += \
-    android.frameworks.cameraservice.service@2.0 \
-    android.frameworks.cameraservice.service@2.1 \
-    android.frameworks.cameraservice.service@2.2 \
-    android.hardware.camera.provider@2.4 \
-    vendor.qti.hardware.camera.postproc@1.0
+$(call soong_config_set,camera,camera_needs_client_info,true)
 
 # Cas
 PRODUCT_PACKAGES += \
