@@ -25,6 +25,7 @@ For the remove-project name block, you will need to customize it for different t
   <remove-project name="LineageOS/android_hardware_qcom_sm7250_display"  />
   <remove-project name="LineageOS/android_hardware_qcom_sm8150_display"  />
   <remove-project name="LineageOS/android_packages_services_Telephony"  />
+  <remove-project name="LineageOS/android_hardware_qcom_data_ipacfg-mgr"  />
 
   <!-- Main repository -->
   <project path="device/asus/zenfone7"             name="android_device_asus_zenfone7"               remote="BrightTwikling"  revision="lineage-22"      />
