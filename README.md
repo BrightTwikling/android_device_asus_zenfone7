@@ -29,7 +29,7 @@ For the remove-project name block, you will need to customize it for different t
 
   <!-- Main repository -->
   <project path="device/asus/zenfone7"             name="android_device_asus_zenfone7"               remote="BrightTwikling"  revision="lineage-22"      />
-  <project path="kernel/asus/sm8250"               name="omnirom_kernel_asus_sm8250"                 remote="BrightTwikling"  revision="android-15"        />
+  <project path="kernel/asus/sm8250"               name="omnirom_kernel_asus_sm8250"                 remote="BrightTwikling"  revision="android-15.1"        />
   <project path="hardware/qcom-caf/sm8250/display" name="omnirom_hardware_qcom_display"              remote="BrightTwikling"  revision="android-15-sm8250" />
   <project path="packages/services/Telephony"      name="Fork-LineageOS_packages_services_Telephony" remote="BrightTwikling"  revision="lineage-22.2" />
 
