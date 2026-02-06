@@ -2258,12 +2258,3 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/lib/libqti-perfd-client.so
 vendor/lib64/libqti-perfd-client.so
-
-vendor/etc/IPACM_cfg.xml
-vendor/bin/ipacm
-vendor/bin/ipacm-diag
-vendor/etc/init/ipacm-diag.rc
-vendor/etc/init/ipacm.rc
-vendor/lib64/liboffloadhal.so
-vendor/lib64/libipanat.so
-
