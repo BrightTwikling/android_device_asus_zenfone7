@@ -42,9 +42,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
-# ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
-
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
