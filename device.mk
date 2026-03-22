@@ -84,15 +84,8 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
-# Android Auto
-ifeq ($(ROM_BUILDTYPE),$(filter $(ROM_BUILDTYPE),GAPPS))
-PRODUCT_PACKAGES += \
-    AndroidAutoStub
-endif
-
 # Additional apps
 PRODUCT_PACKAGES += \
-    WallpaperCropper2 \
     MatLog \
 
 # /system_ext packages
@@ -100,33 +93,18 @@ PRODUCT_PACKAGES += \
     Provision \
     WallpaperCropper
 
-ifeq ($(ROM_BUILDTYPE),GAPPS)
-PRODUCT_PACKAGES += \
-    Launcher3QuickStepGoogle
-else
-PRODUCT_PACKAGES += \
-    Launcher3QuickStepMock
-endif
-
 # Additional tools
 PRODUCT_PACKAGES += \
     vim \
     e2fsck \
     mkfs.exfat \
-    vncflinger \
-    vncpasswd \
     fsck.exfat \
     mke2fs \
-    tune2fs \
-    lsof
+    tune2fs
 
 # Api
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
-
-# AI Neural Networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.0-default
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -182,12 +160,6 @@ PRODUCT_PACKAGES += \
 # Cas
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2
-
-# Charger images
-PRODUCT_PACKAGES += \
-    omni_charger_res_images \
-    animation.txt \
-    font_charger.png
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -308,17 +280,9 @@ endif
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0 \
-    android.hardware.gnss@1.0_vendor \
     android.hardware.gnss@1.1 \
     android.hardware.gnss@2.0 \
-    android.hardware.gnss@2.1 \
-    vendor.qti.gnss@1.0_vendor \
-    vendor.qti.gnss@1.1_vendor \
-    vendor.qti.gnss@1.2_vendor \
-    vendor.qti.gnss@2.0_vendor \
-    vendor.qti.gnss@2.1_vendor \
-    vendor.qti.gnss@3.0_vendor \
-    vendor.qti.gnss@4.0_vendor
+    android.hardware.gnss@2.1
 
 # Graphics
 PRODUCT_PACKAGES += \
@@ -353,14 +317,7 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor \
     android.hidl.allocator@1.0 \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0-default \
-    android.hidl.base@1.0-dsp \
-    android.hidl.base@1.0-gpu \
-    android.hidl.base@1.0-hta \
-    android.hidl.base@1.0.ims.connectionmanagerservice \
-    android.hidl.base@1.0.qualcomm.qti.uceservice \
-    android.hidl.base@1.0_vendor
+    android.hidl.base@1.0
 
 # Input
 PRODUCT_PACKAGES += \
@@ -378,9 +335,7 @@ PRODUCT_PACKAGES += \
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
-    LiveWallpapers \
     LiveWallpapersPicker \
-    VisualizationWallpapers \
     librs_jni
 
 # Media
@@ -397,7 +352,6 @@ PRODUCT_COPY_FILES += \
 # Monitoring, Scheduler, and Statistics
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
-    android.frameworks.schedulerservice@1.0 \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.stats@1.0
 
@@ -500,7 +454,6 @@ PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0 \
     android.hardware.gatekeeper@1.0 \
     android.hardware.biometrics.fingerprint@2.1 \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1 \
     android.hardware.keymaster@4.0
 
 # Sensors
@@ -558,8 +511,7 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml \
     qti-telephony-utils-prd \
-    qti_telephony_utils_prd.xml \
-    tcmiface
+    qti_telephony_utils_prd.xml
 
 # Telephony extension
 PRODUCT_PACKAGES += telephony-ext
@@ -596,23 +548,10 @@ PRODUCT_PACKAGES += \
 # Vendor service
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.dpm.api@1.0 \
-    com.qualcomm.qti.imscmservice@2.0.ims.connectionmanagerservice \
-    com.qualcomm.qti.imscmservice@2.1.ims.connectionmanagerservice \
-    com.qualcomm.qti.imscmservice@2.2.ims.connectionmanagerservice \
-    com.qualcomm.qti.uceservice@2.0.qualcomm.qti.uceservice \
-    com.qualcomm.qti.uceservice@2.1.qualcomm.qti.uceservice \
-    com.qualcomm.qti.uceservice@2.2.qualcomm.qti.uceservice \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.esepowermanager@1.1 \
-    vendor.qti.gnss@1.0_vendor \
-    vendor.qti.gnss@1.1_vendor \
-    vendor.qti.gnss@1.2_vendor \
-    vendor.qti.gnss@2.0_vendor \
-    vendor.qti.gnss@2.1_vendor \
-    vendor.qti.gnss@3.0_vendor \
-    vendor.qti.gnss@4.0_vendor \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.audiohalext@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
