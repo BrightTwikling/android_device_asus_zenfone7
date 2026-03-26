@@ -170,6 +170,11 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 endif
 
+ifneq ($(wildcard packages/apps/SimpleSettingsConfig/Android.bp),)
+PRODUCT_PACKAGES += \
+    SimpleSettingsConfig
+endif
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
