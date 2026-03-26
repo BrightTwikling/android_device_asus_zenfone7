@@ -165,8 +165,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Config
+ifneq ($(wildcard packages/apps/SimpleDeviceConfig/Android.bp),)
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
+endif
 
 # Configstore
 PRODUCT_PACKAGES += \
