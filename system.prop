@@ -1,6 +1,3 @@
-ro.vendor.smartcharging=1
-ro.vendor.disableaicharging=1
-
 ####################################
 #
 # system.prop for qssi

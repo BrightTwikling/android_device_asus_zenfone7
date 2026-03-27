@@ -74,7 +74,6 @@ vendor.camera.sound.forced                      u:object_r:vendor_asus_prop:s0
 vendor.sys.asus.camprobe                           u:object_r:vendor_asus_prop:s0
 
 # Charging
-ro.vendor.smartcharging                         u:object_r:vendor_health_prop:s0
 persist.vendor.pps.power_limit_w                u:object_r:vendor_health_prop:s0
 persist.vendor.chg.max_volt_mv                  u:object_r:vendor_health_prop:s0
 
