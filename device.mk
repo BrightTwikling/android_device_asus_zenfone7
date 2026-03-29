@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 
 # Additional tools
 PRODUCT_PACKAGES += \
-    vim \
     e2fsck \
     mkfs.exfat \
     fsck.exfat \
@@ -178,6 +177,12 @@ endif
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
+
+# editor for config
+ifneq ($(wildcard external/vim/Android.bp),)
+PRODUCT_PACKAGES += \
+    vim
+endif
 
 # DeviceParts
 PRODUCT_PACKAGES += \
