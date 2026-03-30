@@ -94,7 +94,7 @@
     <bool name="config_enableMultiUserUI">true</bool>
 
     <!-- Screen brightness when dozing -->
-    <integer name="config_screenBrightnessDoze">10</integer>
+    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.06667</item>
 
     <!-- Dream of notifications -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
