@@ -18,7 +18,14 @@
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps).
 #
-Rom_Name := lineage
+# Release name (automatically taken from this file's suffix)
+PRODUCT_RELEASE_NAME := $(lastword $(subst /, ,$(lastword $(subst _, ,$(firstword $(subst ., ,$(MAKEFILE_LIST)))))))
+
+# Custom vendor used in build tree (automatically taken from this file's prefix)
+CUSTOM_VENDOR := $(lastword $(subst /, ,$(firstword $(subst _, ,$(firstword $(MAKEFILE_LIST))))))
+
+# OEM Info (automatically taken from device tree path)
+BOARD_VENDOR := $(or $(word 2,$(subst /, ,$(firstword $(MAKEFILE_LIST)))),$(value 2))
 
 AB_OTA_UPDATER := true
 
@@ -57,14 +64,14 @@ include $(vendor_common_full_phone_mk)
 $(call inherit-product, device/asus/zenfone7/device.mk)
 $(call inherit-product, device/asus/zenfone7/omni_common.mk)
 
-# Discard inherited values and use our own instead.
-PRODUCT_DEVICE := zenfone7
-PRODUCT_NAME := $(Rom_Name)_zenfone7
-PRODUCT_BRAND := asus
-PRODUCT_MODEL := ASUS_I002D
-PRODUCT_MANUFACTURER := asus
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := $(CUSTOM_VENDOR)_$(PRODUCT_DEVICE)
+PRODUCT_BRAND := $(BOARD_VENDOR)
+PRODUCT_MODEL := $(shell echo $(PRODUCT_BRAND) | tr  '[:lower:]' '[:upper:]')_$(PRODUCT_DEVICE)
+PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 
-PRODUCT_GMS_CLIENTID_BASE := android-asus
+PRODUCT_GMS_CLIENTID_BASE := android-$(PRODUCT_BRAND)
 
 TARGET_DEVICE := WW_I002D
 PRODUCT_SYSTEM_DEVICE := ASUS_I002D
