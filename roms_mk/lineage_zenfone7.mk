@@ -54,11 +54,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 TARGET_BOOTANIMATION_SIZE := 1080p
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit common_full_phone.mk
-MyTARGET_BUILD := $(shell env | grep '_BUILD=' | grep '=zenfone7' | cut -d= -f1)
-vendor_common_dir := $(shell dirname $(dir $(shell grep "export $(MyTARGET_BUILD)" vendor/*/build/*sh build/*.sh -lrns)))
-vendor_common_full_phone_mk := $(wildcard $(vendor_common_dir)/config/common_full_phone.mk)
+# Depending on kind of rom , there are a case that both of common_full_phone.mk and common.mk
+# or another case that only common.mk.
+# So if common_full_phone.mk exists, prioritize it.
+vendor_common_full_phone_mk := $(wildcard vendor/*/config/common_full_phone.mk)
+vendor_common_mk := $(wildcard vendor/*/config/common.mk)
+ifeq ($(vendor_common_full_phone_mk),)
+include $(vendor_common_mk)
+else
 include $(vendor_common_full_phone_mk)
+endif
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/asus/zenfone7/device.mk)
