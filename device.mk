@@ -461,6 +461,11 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1 \
     android.hardware.keymaster@4.0
 
+# Security(Additional)
+PRODUCT_PACKAGES += \
+    AxSandbox \
+    AppLocker
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
