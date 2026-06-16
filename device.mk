@@ -112,8 +112,23 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.audio.effect@6.0 \
-    android.hardware.audio@6.0
+    android.hardware.soundtrigger@2.3-impl \
+    audio.primary.kona \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudio-resampler \
+    tinymix \
+    sound_trigger.primary.kona
+
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libbatterylistener \
+    libhdmiedid \
+    libhfp \
+    libsndmonitor
+
+PRODUCT_PACKAGES += \
+    libqcomvoiceprocessing
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects_ZS670KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -123,11 +138,13 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.1-impl \
-    audio.bluetooth.default \
-    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth.audio@2.0 \
     android.hardware.bluetooth.audio@2.1 \
+    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
+    audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_sar@1.0
 
 PRODUCT_COPY_FILES +=\
