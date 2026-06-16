@@ -189,10 +189,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcrypto-v33
 
-# Data
+#  IPACM
 PRODUCT_PACKAGES += \
-    IPACM_cfg.xml \
     ipacm \
+    IPACM_cfg.xml \
+    libipanat \
+    liboffloadhal
+
+# Network
+PRODUCT_PACKAGES += \
     librmnetctl \
     libnetfilter_conntrack \
     libnfnetlink
