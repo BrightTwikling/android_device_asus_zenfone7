@@ -67,6 +67,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
+TARGET_BOOTLOADER_BOARD_NAME := kona
 
 # Charger
 HEALTHD_USE_BATTERY_INFO := true
@@ -87,7 +88,6 @@ BOARD_ROOT_EXTRA_FOLDERS += motor_fw1 motor_fw2
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Global
-BOARD_USES_QCOM_HARDWARE := true
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 TARGET_SUPPORTS_32_BIT_APPS := true
 TARGET_SUPPORTS_64_BIT_APPS := true
@@ -199,6 +199,8 @@ BOARD_ROOT_EXTRA_FOLDERS += ADF APD asdf batinfo xrom
 
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := kona
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
@@ -219,13 +221,7 @@ TARGET_USES_MKE2FS := true
 VENDOR_SECURITY_PATCH := 2023-05-01
 
 # Sepolicy
-vendor_omni_sepolicy := $(wildcard vendor/omni/sepolicy/sepolicy.mk)
-ifneq ($(vendor_omni_sepolicy),)
-include vendor/omni/sepolicy/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-else
-include device/qcom/sepolicy_vndr/SEPolicy.mk
-endif
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/product/private
@@ -234,12 +230,9 @@ ifeq ($(service_contexts_exists),)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 endif
 
-ifneq ($(wildcard vendor/omni/sepolicy/libperfmgr/sepolicy.mk),)
-include  vendor/omni/sepolicy/libperfmgr/sepolicy.mk
-else
 libperfmgr_sepolicy := $(wildcard device/*/sepolicy/libperfmgr/sepolicy.mk)
 include $(libperfmgr_sepolicy)
-endif
+
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 

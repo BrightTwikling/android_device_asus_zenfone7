@@ -67,7 +67,6 @@ endif
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/asus/zenfone7/device.mk)
-$(call inherit-product, device/asus/zenfone7/omni_common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)

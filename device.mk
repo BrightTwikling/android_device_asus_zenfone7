@@ -20,6 +20,9 @@
 # product configuration (apps).
 #
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -36,13 +39,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-ifneq ($(wildcard vendor/omni/overlay/CarrierConfig),)
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/omni/overlay/CarrierConfig
-else
 DEVICE_PACKAGE_OVERLAYS += \
     device/asus/zenfone7/omni/CarrierConfig
-endif
 
 PRODUCT_PACKAGES += \
     FrameworksResOverlay \
