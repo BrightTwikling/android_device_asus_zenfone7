@@ -397,7 +397,6 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
-    android.hardware.secure_element@1.2 \
     $(RELEASE_PACKAGE_NFC_STACK) \
     Tag \
     SecureElement \
@@ -432,11 +431,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0 \
-    android.hardware.secure_element@1.1 \
-    android.hardware.secure_element@1.2
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.asus \
@@ -465,6 +459,7 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio-service.compat \
+    android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor \
     libjsoncpp.vendor \
     libsqlite.vendor
