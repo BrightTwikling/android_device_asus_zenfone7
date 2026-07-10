@@ -1938,7 +1938,6 @@ vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libhfp.so
 vendor/lib64/libhta_hexagon_runtime.so
-vendor/lib64/libhwminijail.so
 vendor/lib64/libidl.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libizat_client_api.so
