@@ -106,8 +106,7 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 #HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/manifest/vendor_framework_compatibility_matrix.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    $(DEVICE_PATH)/manifest/device_framework_matrix.xml
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/manifest/framework_manifest.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/manifest/compatibility_matrix.xml \

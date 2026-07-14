@@ -346,6 +346,9 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0 \
     android.hidl.base@1.0
 
+PRODUCT_PACKAGES += \
+    framework_compatibility_matrix.lineage.xml
+
 # Input
 PRODUCT_PACKAGES += \
     fts_ts.idc
