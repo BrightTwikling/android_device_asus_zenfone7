@@ -239,6 +239,9 @@ endif
 libperfmgr_sepolicy := $(wildcard device/*/sepolicy/libperfmgr/sepolicy.mk)
 include $(libperfmgr_sepolicy)
 
+libion_sepolicy := $(wildcard device/*/sepolicy/libion/sepolicy.mk)
+include $(libion_sepolicy)
+
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 
