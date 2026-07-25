@@ -1,4 +1,4 @@
-# Check environmental value
+# 1. Check environmental value
 
 There is comment in [microfactory.bash](https://github.com/LineageOS/android_build_soong/blob/8fab12443ff40601/scripts/microfactory.bash#L17-L21)
 ```
@@ -10,9 +10,11 @@ There is comment in [microfactory.bash](https://github.com/LineageOS/android_bui
 ```
 To avoid what "soong" makes panic, it is good idea to eliminate setting of OUT_DIR_COMMON_BASE from .bashrc.
 
+# 2. Check version of TWRP
+Note that the TWRP version that allows you to install ROMs using adb sideload is <span style="color: red; ">TWRP 3.7.1</span>.<br>
 
-# Local_Manefest
-The following typical local manifests are available for the branch of android16.
+# 3. Local_Manefest
+The following typical local manifests are available for the branch of android17.
 
 For the remove-project name block, you will need to customize it for different types of rom.<br>
 ```
