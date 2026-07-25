@@ -273,6 +273,8 @@ PRODUCT_PACKAGES += \
 
 -include hardware/qcom-caf/sm8250/display/config/display-board.mk
 
+$(call soong_config_set_bool,libui,legacy_gralloc,true)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
