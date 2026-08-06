@@ -188,10 +188,6 @@ PRODUCT_PACKAGES += \
     SimpleSettingsConfig
 endif
 
-# Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # editor for config
 ifneq ($(wildcard external/vim/Android.bp),)
 PRODUCT_PACKAGES += \
