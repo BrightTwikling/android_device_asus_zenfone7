@@ -441,9 +441,14 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0
 
 # Security(Additional)
+ifneq (,$(wildcard packages/apps/AxSandbox/Android.bp))
 PRODUCT_PACKAGES += \
-    AxSandbox \
+    AxSandbox
+endif
+ifneq (,$(wildcard packages/apps/AppLocker/Android.bp))
+PRODUCT_PACKAGES += \
     AppLocker
+endif
 
 # Sensors
 PRODUCT_PACKAGES += \
