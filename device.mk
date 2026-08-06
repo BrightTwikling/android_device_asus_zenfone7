@@ -374,8 +374,7 @@ PRODUCT_COPY_FILES += \
 
 # Monitoring, Scheduler, and Statistics
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0 \
-    android.frameworks.stats@1.0
+    android.frameworks.sensorservice@1.0
 
 # Mount Point symlinks
 PRODUCT_PACKAGES += \
