@@ -258,7 +258,6 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    android.frameworks.displayservice@1.0 \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -375,7 +374,6 @@ PRODUCT_COPY_FILES += \
 
 # Monitoring, Scheduler, and Statistics
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0 \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.stats@1.0
 
