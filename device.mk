@@ -285,10 +285,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
-# fastbootd
+# fastboot
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
+    android.hardware.fastboot@1.0-impl-mock
 
 # Fingerprint
 PRODUCT_PACKAGES += \
