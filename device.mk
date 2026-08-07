@@ -351,11 +351,6 @@ PRODUCT_ENABLE_UFFD_GC := true
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-    LiveWallpapersPicker \
-    librs_jni
-
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0 \
