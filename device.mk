@@ -353,7 +353,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.0 \
+    android.hardware.media.c2@1.2 \
     android.hardware.media.omx@1.0
 
 PRODUCT_COPY_FILES += \
