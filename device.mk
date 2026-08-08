@@ -430,8 +430,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0 \
     android.hardware.gatekeeper@1.0 \
-    android.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.keymaster@4.0
+    android.hardware.biometrics.fingerprint@2.1
 
 # Security(Additional)
 ifneq (,$(wildcard packages/apps/AxSandbox/Android.bp))
