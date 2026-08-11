@@ -85,7 +85,7 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/bin/hw/android.hardware.authsecret@1.0-service-qti',
      'vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so',
      'vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so',
-     'vendor/lib/lib-imsdpl.so'
+     'vendor/lib/lib-imsdpl.so',
      'vendor/lib64/lib-imsdpl.so'): blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
     'vendor/lib64/camera/components/com.vidhance.node.processing.so': blob_fixup()
